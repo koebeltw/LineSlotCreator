@@ -1,0 +1,35 @@
+# github.com/360EntSecGroup-Skylar/excelize v1.4.1
+github.com/360EntSecGroup-Skylar/excelize
+# github.com/cstockton/go-conv v0.0.0-20170524002450-66a2b2ba36e1
+github.com/cstockton/go-conv
+github.com/cstockton/go-conv/internal/refconv
+github.com/cstockton/go-conv/internal/refutil
+# github.com/devfeel/mapper v0.0.0-20190203081521-9b6a91f909c4
+github.com/devfeel/mapper
+# github.com/emirpasic/gods v1.12.0
+github.com/emirpasic/gods/sets/treeset
+github.com/emirpasic/gods/containers
+github.com/emirpasic/gods/sets
+github.com/emirpasic/gods/trees/redblacktree
+github.com/emirpasic/gods/utils
+github.com/emirpasic/gods/trees
+# github.com/go-sql-driver/mysql v1.4.1
+github.com/go-sql-driver/mysql
+# github.com/go-xorm/builder v0.3.3
+github.com/go-xorm/builder
+# github.com/go-xorm/core v0.6.2
+github.com/go-xorm/core
+# github.com/go-xorm/xorm v0.7.3
+github.com/go-xorm/xorm
+# github.com/gorilla/websocket v1.4.0
+github.com/gorilla/websocket
+# github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
+github.com/mohae/deepcopy
+# github.com/pquerna/ffjson v0.0.0-20181028064349-e517b90714f7
+github.com/pquerna/ffjson/ffjson
+github.com/pquerna/ffjson/fflib/v1
+github.com/pquerna/ffjson/fflib/v1/internal
+# github.com/zieckey/goini v0.0.0-20180118150432-0da17d361d26
+github.com/zieckey/goini
+# google.golang.org/appengine v1.4.0
+google.golang.org/appengine/cloudsql
