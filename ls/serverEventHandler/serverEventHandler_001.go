@@ -1,7 +1,7 @@
 package serverEventHandler
 
 import (
-	"github.com/koebeltw/LineSlotCreator/ls/slotHandler"
+	"github.com/koebeltw/Common/LineSlot/slotHandler"
 	"github.com/koebeltw/Common/packet"
 	"github.com/koebeltw/Common/session"
 	"github.com/koebeltw/Common/util"

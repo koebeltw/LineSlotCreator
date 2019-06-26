@@ -2,7 +2,7 @@ package webSocketHandler
 
 import (
 	"github.com/koebeltw/Common/util"
-	"github.com/koebeltw/LineSlotCreator/ls/slotHandler"
+	"github.com/koebeltw/Common/LineSlot/slotHandler"
 	"github.com/koebeltw/LineSlotCreator/ls/loadConfig"
 	"fmt"
 	"github.com/devfeel/mapper"
