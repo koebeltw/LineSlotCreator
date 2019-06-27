@@ -5,13 +5,13 @@ import (
 )
 
 type ServerEventHandler struct {
-	BaseServer session.BaseServer
-	BaseClient session.BaseClient
+	Server session.BaseServer
+	Client session.BaseClient
 }
 
 func NewServerEventHandler(BaseServer session.BaseServer, BaseClient session.BaseClient) ServerEventHandler {
 	return ServerEventHandler{
-		BaseServer: BaseServer,
-		BaseClient: BaseClient,
+		Server: BaseServer,
+		Client: BaseClient,
 	}
 }

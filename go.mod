@@ -10,6 +10,7 @@ require (
 	github.com/emirpasic/gods v1.12.0
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/go-xorm/xorm v0.7.3
+	github.com/gogf/gf v1.7.0 // indirect
 	github.com/gorilla/websocket v1.4.0
 	github.com/pquerna/ffjson v0.0.0-20181028064349-e517b90714f7
 	github.com/zieckey/goini v0.0.0-20180118150432-0da17d361d26
