@@ -5,7 +5,6 @@ import (
 	"github.com/koebeltw/Common/packet"
 	"github.com/koebeltw/Common/tcp"
 	"github.com/koebeltw/Common/util"
-	"github.com/koebeltw/LineSlotCreator/ls/sockets"
 )
 
 type PlayerData struct {
@@ -61,8 +60,6 @@ func (h EventHandler) Event001Dash001() (tcp.Eventfunc) {
 			//bytes, _ = ffjson.Marshal(temp)
 			//fmt.Println(string(bytes))
 			s.SendMsg(001, 001, pa.CopyBytes())
-
-			sockets.Server.Close()
 		}()
 	}
 }
