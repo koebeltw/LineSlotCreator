@@ -21,8 +21,19 @@ github.com/go-xorm/builder
 github.com/go-xorm/core
 # github.com/go-xorm/xorm v0.7.3
 github.com/go-xorm/xorm
+# github.com/gogf/gf v1.7.0
+github.com/gogf/gf/g/container/gchan
+github.com/gogf/gf/g/container/gtype
 # github.com/gorilla/websocket v1.4.0
 github.com/gorilla/websocket
+# github.com/koebeltw/Common v0.0.0-20190628092028-06fd08b05c04
+github.com/koebeltw/Common/tcp
+github.com/koebeltw/Common/type
+github.com/koebeltw/Common/util
+github.com/koebeltw/Common/packet
+github.com/koebeltw/Common/LineSlot/slotHandler
+github.com/koebeltw/Common/orderArrayManager
+github.com/koebeltw/Common/errorcode
 # github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
 github.com/mohae/deepcopy
 # github.com/pquerna/ffjson v0.0.0-20181028064349-e517b90714f7

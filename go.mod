@@ -12,6 +12,7 @@ require (
 	github.com/go-xorm/xorm v0.7.3
 	github.com/gogf/gf v1.7.0 // indirect
 	github.com/gorilla/websocket v1.4.0
+	github.com/koebeltw/Common v0.0.0-20190628092028-06fd08b05c04
 	github.com/pquerna/ffjson v0.0.0-20181028064349-e517b90714f7
 	github.com/zieckey/goini v0.0.0-20180118150432-0da17d361d26
 )
