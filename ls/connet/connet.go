@@ -7,6 +7,7 @@ import (
 	_ "github.com/koebeltw/LineSlotCreator/ls/loadData"
 	"github.com/koebeltw/Common/util"
 	"github.com/koebeltw/Common/type"
+	"github.com/koebeltw/LineSlotCreator/ls/sockets"
 	"github.com/koebeltw/LineSlotCreator/ls/webSocketHandler"
 	"github.com/koebeltw/Common/tcp"
 	"fmt"
@@ -31,31 +32,31 @@ func init() {
 	//fmt.Println("port:", *port)
 	//fmt.Println("name:", name)
 
-	Server := tcp.CreateBaseServer()
+	sockets.Server = tcp.CreateBaseServer()
 
 	coder := tcp.NewMsgHead()
-	serverEventHandler := tcp.GetEventHandler(eventHandler.NewEventHandler(Server, nil), nil)
-	serverConnectHandler := connectHandler.NewConnectHandler(Server)
-	Server.SetEventHandler(serverEventHandler)
-	Server.SetCoder(coder)
-	Server.SetUserHandler(serverConnectHandler)
-	Server.SetServerHandler(serverConnectHandler)
-	Server.SetSessionMgr(tcp.NewSessionsMgr(1))
-	Server.SetServerAddr(Type.Addr{
+	serverEventHandler := tcp.GetEventHandler(eventHandler.EventHandler{}, nil)
+	serverConnectHandler := &connectHandler.ConnectHandler{}
+	sockets.Server.SetEventHandler(serverEventHandler)
+	sockets.Server.SetCoder(coder)
+	sockets.Server.SetUserHandler(serverConnectHandler)
+	sockets.Server.SetServerHandler(serverConnectHandler)
+	sockets.Server.SetSessionMgr(tcp.NewSessionsMgr(1))
+	sockets.Server.SetServerAddr(Type.Addr{
 		ID:   0,
 		Name: "LS",
 		IP:   util.GetIPs()[0],
 		Port: int(util.ConvInt32(loadConfig.Config.LSPort)),
 	})
 
-	Server.SetClientsAddr([]Type.Addr{{
+	sockets.Server.SetClientsAddr([]Type.Addr{{
 		ID:   0,
 		Name: "LS",
 		IP:   util.GetIPs()[0],
 		Port: int(util.ConvInt32(loadConfig.Config.LSPort)),
 	}})
 
-	go Server.Start()
+	go sockets.Server.Start()
 
 	log.Println("Socket start at " + util.GetIPs()[0] + ":" +  loadConfig.Config.LSPort)
 }

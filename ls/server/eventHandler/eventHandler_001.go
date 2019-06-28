@@ -5,6 +5,7 @@ import (
 	"github.com/koebeltw/Common/packet"
 	"github.com/koebeltw/Common/tcp"
 	"github.com/koebeltw/Common/util"
+	"github.com/koebeltw/LineSlotCreator/ls/sockets"
 )
 
 type PlayerData struct {
@@ -13,37 +14,6 @@ type PlayerData struct {
 	Who      int32
 	Serial   int32
 }
-
-//// Event001Dash001 blabla
-//func (h ServerEventHandler) Event001Dash001() (session.Eventfunc) {
-//	return func(session session.Session, b []byte) {
-//		type readData struct {
-//			PlayerData
-//			intoFreeGameRate int32
-//		}
-//
-//		go func() {
-//			pa := packet.NewPacketByBytes(b)
-//			defer packet.PutPacket(pa)
-//
-//			ReadData := readData{}
-//			pa.ReadInterface(&ReadData)
-//			Positions := []uint16{}
-//
-//			temp := slotHandler.PlayOnce(ReadData.GameKind, 0, Positions, util.ConvInt32(ReadData.intoFreeGameRate))
-//			pa.Reset()
-//			pa.WriteInterface(ReadData)
-//			pa.WriteUint16(temp.FreeGameCount)
-//			pa.WriteFloat64(temp.TotalOdds)
-//			pa.WriteUint8(uint8(len(temp.Positions)))
-//			for i := 0; i < len(temp.Positions); i++ {
-//				pa.WriteUint8(uint8(temp.Positions[i]))
-//			}
-//
-//			session.SendMsg(001, 001, pa.CopyBytes())
-//		}()
-//	}
-//}
 
 // Event001Dash001 blabla
 func (h EventHandler) Event001Dash001() (tcp.Eventfunc) {
@@ -91,6 +61,8 @@ func (h EventHandler) Event001Dash001() (tcp.Eventfunc) {
 			//bytes, _ = ffjson.Marshal(temp)
 			//fmt.Println(string(bytes))
 			session.SendMsg(001, 001, pa.CopyBytes())
+
+			sockets.Server.Close()
 		}()
 	}
 }

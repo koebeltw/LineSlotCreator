@@ -6,20 +6,11 @@ import (
 	"log"
 )
 
-func NewConnectHandler(BaseServer tcp.BaseServer) *ConnectHandler {
-	return &ConnectHandler{
-		BaseServer: BaseServer,
-	}
-}
-
-type ConnectHandler struct{
-	BaseServer tcp.BaseServer
-	BaseClient tcp.BaseClient
-}
+type ConnectHandler struct{}
 
 // OnUserConnect 客户端连接事件
 func (ser *ConnectHandler) OnUserConnect(s tcp.Session) {
-	loadData.GetDataArrayBytes(func (b []byte){
+	loadData.GetDataArrayBytes(func(b []byte) {
 		s.SendMsg(000, 001, b)
 	})
 

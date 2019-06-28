@@ -4,9 +4,9 @@
     <list default="true" id="1ee36ff5-7170-470b-ac3b-a62641904e4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ls/connet/connet.go" beforeDir="false" afterPath="$PROJECT_DIR$/ls/connet/connet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ls/serverConnectHandler/serverConnectHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/ls/server/connectHandler/connectHandler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ls/serverEventHandler/serverEventHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/ls/server/eventHandler/eventHandler.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ls/serverEventHandler/serverEventHandler_001.go" beforeDir="false" afterPath="$PROJECT_DIR$/ls/server/eventHandler/eventHandler_001.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ls/server/connectHandler/connectHandler.go" beforeDir="false" afterPath="$PROJECT_DIR$/ls/server/connectHandler/connectHandler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ls/server/eventHandler/eventHandler.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ls/server/eventHandler/eventHandler_001.go" beforeDir="false" afterPath="$PROJECT_DIR$/ls/server/eventHandler/eventHandler_001.go" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -166,18 +166,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="28" />
-          <entry key="go" value="448" />
+          <entry key="go" value="530" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="448" />
+          <entry key="Go" value="530" />
           <entry key="PLAIN_TEXT" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="55" />
+          <entry key="go" value="59" />
           <entry key="mod" value="1" />
           <entry key="s" value="1" />
         </counts>
@@ -185,7 +185,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="DTD" value="1" />
-          <entry key="Go" value="55" />
+          <entry key="Go" value="59" />
           <entry key="x86 Plan9 Assembly" value="1" />
         </counts>
       </usages-collector>
@@ -193,20 +193,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ls/connet/connet.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Common/tcp/sessionsMgr.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="300">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <folding>
+                <element signature="e#16#503#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -214,8 +208,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Common/tcp/baseServer.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+            <state relative-caret-position="336">
+              <caret line="135" column="34" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="34" />
               <folding>
                 <element signature="e#17#102#0" expanded="true" />
               </folding>
@@ -224,40 +218,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ls/server/eventHandler/eventHandler.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ls/server/connectHandler/connectHandler.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="275">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Common/orderMapManager/omm.go">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ls/server/eventHandler/eventHandler_001.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2342">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Common/orderArrayManager/oam.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5538">
-              <caret line="224" column="18" lean-forward="true" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="18" />
-              <folding>
-                <element signature="e#27#141#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="233">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -287,6 +260,33 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ls/sockets/sockets.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Common/tcp/eventHandler.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ls/server/eventHandler/eventHandler.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -298,7 +298,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TotalOdds</find>
       <find>createIntoFreeGameCh</find>
       <find>Odds</find>
       <find>3688</find>
@@ -328,6 +327,7 @@
       <find>function</find>
       <find>PushEvent</find>
       <find>loadConfig</find>
+      <find>serverConnectHandler</find>
     </findStrings>
     <replaceStrings>
       <replace>int8</replace>
@@ -385,8 +385,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../../../diamond/tool/session/baseClient.go" />
-        <option value="$PROJECT_DIR$/../../../../diamond/tool/session/eventHandler.go" />
         <option value="$PROJECT_DIR$/../../../../diamond/common/type/type.go" />
         <option value="$PROJECT_DIR$/../../../../diamond/tool/session/msgHead.go" />
         <option value="$PROJECT_DIR$/../../../../diamond/tool/session/moneyMsgHead.go" />
@@ -433,9 +431,11 @@
         <option value="$PROJECT_DIR$/../Common/orderMapManager/omm8.go" />
         <option value="$PROJECT_DIR$/../Common/orderMapManager/omm.go" />
         <option value="$PROJECT_DIR$/../Common/errorcode/errorcode.go" />
-        <option value="$PROJECT_DIR$/ls/server/eventHandler/eventHandler.go" />
+        <option value="$PROJECT_DIR$/ls/sockets/sockets.go" />
         <option value="$PROJECT_DIR$/ls/server/connectHandler/connectHandler.go" />
         <option value="$PROJECT_DIR$/ls/connet/connet.go" />
+        <option value="$PROJECT_DIR$/ls/server/eventHandler/eventHandler.go" />
+        <option value="$PROJECT_DIR$/ls/server/eventHandler/eventHandler_001.go" />
       </list>
     </option>
   </component>
@@ -489,7 +489,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
@@ -512,7 +514,19 @@
               <item name="LineSlotCreator" type="b2602c69:ProjectViewProjectNode" />
               <item name="LineSlotCreator" type="462c0819:PsiDirectoryNode" />
               <item name="ls" type="462c0819:PsiDirectoryNode" />
+              <item name="connet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LineSlotCreator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LineSlotCreator" type="462c0819:PsiDirectoryNode" />
+              <item name="ls" type="462c0819:PsiDirectoryNode" />
               <item name="loadConfig" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LineSlotCreator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LineSlotCreator" type="462c0819:PsiDirectoryNode" />
+              <item name="ls" type="462c0819:PsiDirectoryNode" />
+              <item name="loadData" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LineSlotCreator" type="b2602c69:ProjectViewProjectNode" />
@@ -533,6 +547,12 @@
               <item name="ls" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="eventHandler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LineSlotCreator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LineSlotCreator" type="462c0819:PsiDirectoryNode" />
+              <item name="ls" type="462c0819:PsiDirectoryNode" />
+              <item name="sockets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LineSlotCreator" type="b2602c69:ProjectViewProjectNode" />
@@ -792,7 +812,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561694150910" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561703401855" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
@@ -939,12 +959,12 @@
       <workItem from="1561519149099" duration="963000" />
       <workItem from="1561528431888" duration="463000" />
       <workItem from="1561529690838" duration="369000" />
-      <workItem from="1561531742843" duration="13142000" />
+      <workItem from="1561531742843" duration="14965000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="698709000" />
+    <option name="totallyTimeSpent" value="700532000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -957,8 +977,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32089552" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32089552" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -968,7 +989,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49733475" weight="0.3286334" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.45575693" visible="true" weight="0.33984798" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.45575693" visible="true" weight="0.33984798" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
@@ -1044,7 +1065,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../session/eventHandler.go" />
     <entry file="file://$PROJECT_DIR$/../session/sessionsMgr.go" />
     <entry file="file://$PROJECT_DIR$/../session/moneyMsgHead.go" />
     <entry file="file://$PROJECT_DIR$/../session/msgHead.go" />
@@ -1109,16 +1129,6 @@
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#26#319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ls/server/eventHandler/eventHandler_001.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-          <folding>
-            <element signature="e#28#202#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1281,21 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Common/tcp/eventHandler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1392" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Common/tcp/baseServer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
-          <folding>
-            <element signature="e#17#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Common/tcp/sessionsMgr.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1339,24 +1334,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ls/server/eventHandler/eventHandler.go">
+    <entry file="file://$PROJECT_DIR$/../Common/tcp/baseServer.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="336">
+          <caret line="135" column="34" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="34" />
+          <folding>
+            <element signature="e#17#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Common/tcp/eventHandler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ls/server/connectHandler/connectHandler.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="275">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ls/connet/connet.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="300">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="e#16#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ls/sockets/sockets.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ls/server/eventHandler/eventHandler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ls/server/eventHandler/eventHandler_001.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
