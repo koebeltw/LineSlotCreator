@@ -1,14 +1,14 @@
 package connet
 
 import (
-	"github.com/koebeltw/LineSlotCreator/ls/serverConnectHandler"
-	"github.com/koebeltw/LineSlotCreator/ls/serverEventHandler"
+	"github.com/koebeltw/LineSlotCreator/ls/server/connectHandler"
+	"github.com/koebeltw/LineSlotCreator/ls/server/eventHandler"
 	"github.com/koebeltw/LineSlotCreator/ls/loadConfig"
 	_ "github.com/koebeltw/LineSlotCreator/ls/loadData"
 	"github.com/koebeltw/Common/util"
 	"github.com/koebeltw/Common/type"
 	"github.com/koebeltw/LineSlotCreator/ls/webSocketHandler"
-	"github.com/koebeltw/Common/session"
+	"github.com/koebeltw/Common/tcp"
 	"fmt"
 	"github.com/gorilla/websocket"
 	"log"
@@ -31,16 +31,16 @@ func init() {
 	//fmt.Println("port:", *port)
 	//fmt.Println("name:", name)
 
-	Server := session.CreateBaseServer()
+	Server := tcp.CreateBaseServer()
 
-	coder := session.NewMsgHead()
-	serverEventHandler := session.GetEventHandler(serverEventHandler.NewServerEventHandler(Server, nil), nil)
-	serverConnectHandler := serverConnectHandler.NewServerConnectHandler(Server)
+	coder := tcp.NewMsgHead()
+	serverEventHandler := tcp.GetEventHandler(eventHandler.NewEventHandler(Server, nil), nil)
+	serverConnectHandler := connectHandler.NewConnectHandler(Server)
 	Server.SetEventHandler(serverEventHandler)
 	Server.SetCoder(coder)
 	Server.SetUserHandler(serverConnectHandler)
 	Server.SetServerHandler(serverConnectHandler)
-	Server.SetSessionMgr(session.NewSessionsMgr(1))
+	Server.SetSessionMgr(tcp.NewSessionsMgr(1))
 	Server.SetServerAddr(Type.Addr{
 		ID:   0,
 		Name: "LS",

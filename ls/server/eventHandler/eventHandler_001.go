@@ -1,9 +1,9 @@
-package serverEventHandler
+package eventHandler
 
 import (
 	"github.com/koebeltw/Common/LineSlot/slotHandler"
 	"github.com/koebeltw/Common/packet"
-	"github.com/koebeltw/Common/session"
+	"github.com/koebeltw/Common/tcp"
 	"github.com/koebeltw/Common/util"
 )
 
@@ -46,8 +46,8 @@ type PlayerData struct {
 //}
 
 // Event001Dash001 blabla
-func (h ServerEventHandler) Event001Dash001() (session.Eventfunc) {
-	return func(session session.Session, b []byte) {
+func (h EventHandler) Event001Dash001() (tcp.Eventfunc) {
+	return func(session tcp.Session, b []byte) {
 		type readData struct {
 			PlayerData
 			IntoFreeGameRate int32
