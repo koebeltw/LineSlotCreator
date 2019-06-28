@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "github.com/koebeltw/LineSlotCreator/ls/connet"
+	_ "github.com/koebeltw/LineSlotCreator/ls/create"
 	"bufio"
 	_ "github.com/go-sql-driver/mysql"
 	"log"

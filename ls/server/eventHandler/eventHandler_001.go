@@ -17,7 +17,7 @@ type PlayerData struct {
 
 // Event001Dash001 blabla
 func (h EventHandler) Event001Dash001() (tcp.Eventfunc) {
-	return func(session tcp.Session, b []byte) {
+	return func(s tcp.Session, b []byte) {
 		type readData struct {
 			PlayerData
 			IntoFreeGameRate int32
@@ -60,7 +60,7 @@ func (h EventHandler) Event001Dash001() (tcp.Eventfunc) {
 			//fmt.Println(string(bytes))
 			//bytes, _ = ffjson.Marshal(temp)
 			//fmt.Println(string(bytes))
-			session.SendMsg(001, 001, pa.CopyBytes())
+			s.SendMsg(001, 001, pa.CopyBytes())
 
 			sockets.Server.Close()
 		}()

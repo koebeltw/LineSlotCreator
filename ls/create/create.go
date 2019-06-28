@@ -1,4 +1,4 @@
-package connet
+package create
 
 import (
 	"github.com/koebeltw/LineSlotCreator/ls/server/connectHandler"
@@ -14,8 +14,6 @@ import (
 	"github.com/gorilla/websocket"
 	"log"
 	"net/http"
-	//"time"
-	//"flag"
 )
 
 func init() {
